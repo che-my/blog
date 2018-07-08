@@ -23,6 +23,12 @@ class UserController extends Controller
         return view('admin.users.add');
     }
 
+    //添加数据
+    public function insert()
+    {
+        //return view('admin.users.add');
+    }
+
     //单条数据删除
     public function delete(Request $request)
     {
