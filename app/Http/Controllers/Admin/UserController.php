@@ -26,7 +26,7 @@ class UserController extends Controller
     //添加数据
     public function insert()
     {
-        //return view('admin.users.add');
+        return view('admin.users.add');
     }
 
     //单条数据删除
