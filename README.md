@@ -15,7 +15,7 @@
 ## 安装
 ### 1.clone到本地
 ```
-git clone https://github.com/GeekGhc/adminLTE-for-laravel.git
+git clone https://github.com/che-my/blog.git
 ```
 ### 2.根目录下创建.env文件
 ```
