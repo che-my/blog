@@ -13,7 +13,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
     	$keywords = $request->input('keywords');
-    	$users = DB::table("users")->where("name","like","%".$keywords."%")->paginate(2);
+    	$users = DB::table("users")->select('id','name','email','remember_token','created_at','updated_at')->where('name', 'like',"%{$keywords}%")->paginate(2);
         return view('admin.users.index',["users"=>$users,'request'=>$request->all(),"keywords"=>$keywords]);
     }
 
